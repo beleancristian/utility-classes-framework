@@ -564,25 +564,13 @@ html {
 }
 
 .px-12 {
-  padding-left: min(
-    max(3.36rem, calc(3.36rem + ((1vw - 0.32rem) * 1.8))),
-    4.8rem
-  );
-  padding-right: min(
-    max(3.36rem, calc(3.36rem + ((1vw - 0.32rem) * 1.8))),
-    4.8rem
-  );
+  padding-left: min(max(3.36rem, calc(3.36rem + ((1vw - 0.32rem) * 1.8))),4.8rem);
+  padding-right: min(max(3.36rem, calc(3.36rem + ((1vw - 0.32rem) * 1.8))),4.8rem);
 }
 
 .px-16 {
-  padding-left: min(
-    max(4.48rem, calc(4.48rem + ((1vw - 0.32rem) * 2.4))),
-    6.4rem
-  );
-  padding-right: min(
-    max(4.48rem, calc(4.48rem + ((1vw - 0.32rem) * 2.4))),
-    6.4rem
-  );
+  padding-left: min(max(4.48rem, calc(4.48rem + ((1vw - 0.32rem) * 2.4))),6.4rem);
+  padding-right: min(max(4.48rem, calc(4.48rem + ((1vw - 0.32rem) * 2.4))),6.4rem);
 }
 
 .px-20 {
@@ -591,14 +579,8 @@ html {
 }
 
 .px-24 {
-  padding-left: min(
-    max(6.72rem, calc(6.72rem + ((1vw - 0.32rem) * 3.6))),
-    9.6rem
-  );
-  padding-right: min(
-    max(6.72rem, calc(6.72rem + ((1vw - 0.32rem) * 3.6))),
-    9.6rem
-  );
+  padding-left: min(max(6.72rem, calc(6.72rem + ((1vw - 0.32rem) * 3.6))),9.6rem);
+  padding-right: min(max(6.72rem, calc(6.72rem + ((1vw - 0.32rem) * 3.6))),9.6rem);
 }
 
 /* MARGIN */
@@ -646,115 +628,67 @@ html {
 }
 
 .mr-1 {
-  margin-right: min(
-    max(0.28rem, calc(0.28rem + ((1vw - 0.32rem) * 0.15))),
-    0.4rem
-  );
+  margin-right: min(max(0.28rem, calc(0.28rem + ((1vw - 0.32rem) * 0.15))),0.4rem);
 }
 
 .mb-1 {
-  margin-bottom: min(
-    max(0.28rem, calc(0.28rem + ((1vw - 0.32rem) * 0.15))),
-    0.4rem
-  );
+  margin-bottom: min(max(0.28rem, calc(0.28rem + ((1vw - 0.32rem) * 0.15))),0.4rem);
 }
 
 .ml-1 {
-  margin-left: min(
-    max(0.28rem, calc(0.28rem + ((1vw - 0.32rem) * 0.15))),
-    0.4rem
-  );
+  margin-left: min(max(0.28rem, calc(0.28rem + ((1vw - 0.32rem) * 0.15))),0.4rem);
 }
 
 .mt-1 {
-  margin-top: min(
-    max(0.28rem, calc(0.28rem + ((1vw - 0.32rem) * 0.15))),
-    0.4rem
-  );
+  margin-top: min(max(0.28rem, calc(0.28rem + ((1vw - 0.32rem) * 0.15))),0.4rem);
 }
 
 .mr-2 {
-  margin-right: min(
-    max(0.56rem, calc(0.56rem + ((1vw - 0.32rem) * 0.3))),
-    0.8rem
-  );
+  margin-right: min(max(0.56rem, calc(0.56rem + ((1vw - 0.32rem) * 0.3))),0.8rem);
 }
 
 .mb-2 {
-  margin-bottom: min(
-    max(0.56rem, calc(0.56rem + ((1vw - 0.32rem) * 0.3))),
-    0.8rem
-  );
+  margin-bottom: min(max(0.56rem, calc(0.56rem + ((1vw - 0.32rem) * 0.3))),0.8rem);
 }
 
 .ml-2 {
-  margin-left: min(
-    max(0.56rem, calc(0.56rem + ((1vw - 0.32rem) * 0.3))),
-    0.8rem
-  );
+  margin-left: min(max(0.56rem, calc(0.56rem + ((1vw - 0.32rem) * 0.3))),0.8rem);
 }
 
 .mt-2 {
-  margin-top: min(
-    max(0.56rem, calc(0.56rem + ((1vw - 0.32rem) * 0.3))),
-    0.8rem
-  );
+  margin-top: min(max(0.56rem, calc(0.56rem + ((1vw - 0.32rem) * 0.3))),0.8rem);
 }
 
 .mr-3 {
-  margin-right: min(
-    max(0.84rem, calc(0.84rem + ((1vw - 0.32rem) * 0.45))),
-    1.2rem
-  );
+  margin-right: min(max(0.84rem, calc(0.84rem + ((1vw - 0.32rem) * 0.45))),1.2rem);
 }
 
 .mb-3 {
-  margin-bottom: min(
-    max(0.84rem, calc(0.84rem + ((1vw - 0.32rem) * 0.45))),
-    1.2rem
-  );
+  margin-bottom: min(max(0.84rem, calc(0.84rem + ((1vw - 0.32rem) * 0.45))),1.2rem);
 }
 
 .ml-3 {
-  margin-left: min(
-    max(0.84rem, calc(0.84rem + ((1vw - 0.32rem) * 0.45))),
-    1.2rem
-  );
+  margin-left: min(max(0.84rem, calc(0.84rem + ((1vw - 0.32rem) * 0.45))),1.2rem);
 }
 
 .mt-3 {
-  margin-top: min(
-    max(0.84rem, calc(0.84rem + ((1vw - 0.32rem) * 0.45))),
-    1.2rem
-  );
+  margin-top: min(max(0.84rem, calc(0.84rem + ((1vw - 0.32rem) * 0.45))),1.2rem);
 }
 
 .mr-4 {
-  margin-right: min(
-    max(1.12rem, calc(1.12rem + ((1vw - 0.32rem) * 0.6))),
-    1.6rem
-  );
+  margin-right: min(max(1.12rem, calc(1.12rem + ((1vw - 0.32rem) * 0.6))),1.6rem);
 }
 
 .mb-4 {
-  margin-bottom: min(
-    max(1.12rem, calc(1.12rem + ((1vw - 0.32rem) * 0.6))),
-    1.6rem
-  );
+  margin-bottom: min(max(1.12rem, calc(1.12rem + ((1vw - 0.32rem) * 0.6))),1.6rem);
 }
 
 .ml-4 {
-  margin-left: min(
-    max(1.12rem, calc(1.12rem + ((1vw - 0.32rem) * 0.6))),
-    1.6rem
-  );
+  margin-left: min(max(1.12rem, calc(1.12rem + ((1vw - 0.32rem) * 0.6))),1.6rem);
 }
 
 .mt-4 {
-  margin-top: min(
-    max(1.12rem, calc(1.12rem + ((1vw - 0.32rem) * 0.6))),
-    1.6rem
-  );
+  margin-top: min(max(1.12rem, calc(1.12rem + ((1vw - 0.32rem) * 0.6))),1.6rem);
 }
 
 .mr-5 {
@@ -762,10 +696,7 @@ html {
 }
 
 .mb-5 {
-  margin-bottom: min(
-    max(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.75))),
-    2rem
-  );
+  margin-bottom: min(max(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.75))),2rem);
 }
 
 .ml-5 {
@@ -777,80 +708,47 @@ html {
 }
 
 .mr-6 {
-  margin-right: min(
-    max(1.68rem, calc(1.68rem + ((1vw - 0.32rem) * 0.9))),
-    2.4rem
-  );
+  margin-right: min(max(1.68rem, calc(1.68rem + ((1vw - 0.32rem) * 0.9))),2.4rem);
 }
 
 .mb-6 {
-  margin-bottom: min(
-    max(1.68rem, calc(1.68rem + ((1vw - 0.32rem) * 0.9))),
-    2.4rem
-  );
+  margin-bottom: min(max(1.68rem, calc(1.68rem + ((1vw - 0.32rem) * 0.9))),2.4rem);
 }
 
 .ml-6 {
-  margin-left: min(
-    max(1.68rem, calc(1.68rem + ((1vw - 0.32rem) * 0.9))),
-    2.4rem
-  );
+  margin-left: min(max(1.68rem, calc(1.68rem + ((1vw - 0.32rem) * 0.9))),2.4rem);
 }
 
 .mt-6 {
-  margin-top: min(
-    max(1.68rem, calc(1.68rem + ((1vw - 0.32rem) * 0.9))),
-    2.4rem
-  );
+  margin-top: min(max(1.68rem, calc(1.68rem + ((1vw - 0.32rem) * 0.9))),2.4rem);
 }
 
 .mr-8 {
-  margin-right: min(
-    max(2.24rem, calc(2.24rem + ((1vw - 0.32rem) * 1.2))),
-    3.2rem
-  );
+  margin-right: min(max(2.24rem, calc(2.24rem + ((1vw - 0.32rem) * 1.2))),3.2rem);
 }
 
 .mb-8 {
-  margin-bottom: min(
-    max(2.24rem, calc(2.24rem + ((1vw - 0.32rem) * 1.2))),
-    3.2rem
-  );
+  margin-bottom: min(max(2.24rem, calc(2.24rem + ((1vw - 0.32rem) * 1.2))),3.2rem);
 }
 
 .ml-8 {
-  margin-left: min(
-    max(2.24rem, calc(2.24rem + ((1vw - 0.32rem) * 1.2))),
-    3.2rem
-  );
+  margin-left: min(max(2.24rem, calc(2.24rem + ((1vw - 0.32rem) * 1.2))),3.2rem);
 }
 
 .mt-8 {
-  margin-top: min(
-    max(2.24rem, calc(2.24rem + ((1vw - 0.32rem) * 1.2))),
-    3.2rem
-  );
+  margin-top: min(max(2.24rem, calc(2.24rem + ((1vw - 0.32rem) * 1.2))),3.2rem);
 }
 
 .mr-12 {
-  margin-right: min(
-    max(3.36rem, calc(3.36rem + ((1vw - 0.32rem) * 1.8))),
-    4.8rem
-  );
+  margin-right: min(max(3.36rem, calc(3.36rem + ((1vw - 0.32rem) * 1.8))),4.8rem);
 }
 
 .mb-12 {
-  margin-bottom: min(
-    max(3.36rem, calc(3.36rem + ((1vw - 0.32rem) * 1.8))),
-    4.8rem
-  );
+  margin-bottom: min(max(3.36rem, calc(3.36rem + ((1vw - 0.32rem) * 1.8))),4.8rem);
 }
 
 .ml-12 {
-  margin-left: min(
-    max(3.36rem, calc(3.36rem + ((1vw - 0.32rem) * 1.8))),
-    4.8rem
-  );
+  margin-left: min(max(3.36rem, calc(3.36rem + ((1vw - 0.32rem) * 1.8))),4.8rem);
 }
 
 .mt-12 {
