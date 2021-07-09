@@ -1,0 +1,1425 @@
+html {
+  font-size: 62.5%;
+}
+
+/* Owl Spacing */
+
+.ct-section.owl-spacing--s .ct-section-inner-wrap > * + *,
+.owl-spacing--s:not(.ct-section) > * + * {
+  margin-top: 0.5vmax;
+}
+
+.ct-section.owl-spacing--m .ct-section-inner-wrap > * + *,
+.owl-spacing--m:not(.ct-section) > * + * {
+  margin-top: 1vmax;
+}
+
+.ct-section.owl-spacing--l .ct-section-inner-wrap > * + *,
+.owl-spacing--l:not(.ct-section) > * + * {
+  margin-top: 2vmax;
+}
+
+.ct-section.owl-spacing--xl .ct-section-inner-wrap > * + *,
+.owl-spacing--xl:not(.ct-section) > * + * {
+  margin-top: 4vmax;
+}
+
+/* MAX WIDTH UTILITY CLASSES */
+
+.max-w-xs {
+  width: 100%;
+  max-width: 32rem;
+}
+
+.max-w-sm {
+  width: 100%;
+  max-width: 48rem;
+}
+
+.max-w-md {
+  width: 100%;
+  max-width: 64rem;
+}
+
+.max-w-lg {
+  width: 100%;
+  max-width: 72rem;
+}
+
+.max-w-xl {
+  width: 100%;
+  max-width: 96rem;
+}
+
+.max-w-2xl {
+  width: 100%;
+  max-width: 112rem;
+}
+
+.max-w-full {
+  width: 100%;
+  max-width: 100%;
+}
+
+.max-w-prose {
+  width: 100%;
+  max-width: 40ch;
+}
+
+/* Tailwind CSS inspired utility classes */
+/* TYPOGRAPHY */
+
+.h1 {
+  font-size: min(max(3.6rem, calc(3.6rem + ((1vw - 0.32rem) * 3))), 6rem);
+  line-height: min(max(4rem, calc(4rem + ((1vw - 0.32rem) * 2.5))), 6rem);
+  font-weight: 700;
+}
+
+.h2 {
+  font-size: min(max(3.12rem, calc(3.12rem + ((1vw - 0.32rem) * 2.1))), 4.8rem);
+  line-height: min(max(3.74rem, calc(3.74rem + ((1vw - 0.32rem) * 1.325))),4.8rem);
+  font-weight: 700;
+}
+
+.h3 {
+  font-size: min(
+    max(2.73rem, calc(2.73rem + ((1vw - 0.32rem) * 1.4625))),3.9rem);
+  line-height: min(max(3.54rem, calc(3.54rem + ((1vw - 0.32rem) * 0.95))),4.3rem);
+  font-weight: 700;
+}
+
+.h4 {
+  font-size: min(max(2.3rem, calc(2.3rem + ((1vw - 0.32rem) * 1))), 3.1rem);
+  line-height: min(max(3rem, calc(3rem + ((1vw - 0.32rem) * 0.875))), 3.7rem);
+  font-weight: 700;
+}
+
+.h5 {
+  font-size: min(max(2rem, calc(2rem + ((1vw - 0.32rem) * 0.625))), 2.5rem);
+  line-height: min(max(2.45rem, calc(2.45rem + ((1vw - 0.32rem) * 1.0875))),3.32rem);
+  font-weight: 700;
+}
+
+.h6 {
+  font-size: min(max(1.8rem, calc(1.8rem + ((1vw - 0.32rem) * 0.25))), 2rem);
+  line-height: min(max(2.4rem, calc(2.4rem + ((1vw - 0.32rem) * 0.5))), 2.8rem);
+  font-weight: 700;
+}
+
+.text-xs {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.text-sm {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.text-base {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.text-lg {
+  font-size: min(max(1.7rem, calc(1.7rem + ((1vw - 0.32rem) * 0.125))), 1.8rem);
+  line-height: min(max(2.55rem, calc(2.55rem + ((1vw - 0.32rem) * 0.1875))),2.7rem);
+}
+
+.text-xl {
+  font-size: min(max(1.8rem, calc(1.8rem + ((1vw - 0.32rem) * 0.25))), 2rem);
+  line-height: min(max(2.4rem, calc(2.4rem + ((1vw - 0.32rem) * 0.5))), 2.8rem);
+}
+
+.text-2xl {
+    font-size: min(max(2.04rem, calc(2.04rem + ((1vw - 0.32rem) * 0.45))),2.4rem);
+  line-height: min(max(2.4rem, calc(2.4rem + ((1vw - 0.32rem) * 1))), 3.2rem);
+}
+
+.text-3xl {
+  font-size: min(max(2.4rem, calc(2.4rem + ((1vw - 0.32rem) * 0.75))), 3rem);
+  line-height: min(max(3.2rem, calc(3.2rem + ((1vw - 0.32rem) * 0.5))), 3.6rem);
+}
+
+.text-4xl {
+  font-size: min(max(2.7rem, calc(2.7rem + ((1vw - 0.32rem) * 1.125))), 3.6rem);
+  line-height: min(max(3.51rem, calc(3.51rem + ((1vw - 0.32rem) * 0.6125))),4rem);
+}
+
+.text-5xl {
+  font-size: min(max(3.36rem, calc(3.36rem + ((1vw - 0.32rem) * 1.8))), 4.8rem);
+  line-height: min(max(3.8rem, calc(3.8rem + ((1vw - 0.32rem) * 1.25))),4.8rem);
+}
+
+.text-6xl {
+  font-size: min(max(3.9rem, calc(3.9rem + ((1vw - 0.32rem) * 2.625))), 6rem);
+  line-height: 1;
+}
+
+.text-7xl {
+  font-size: min(max(4.32rem, calc(4.32rem + ((1vw - 0.32rem) * 3.6))), 7.2rem);
+  line-height: 1;
+}
+
+.text-8xl {
+  font-size: min(max(5.28rem, calc(5.28rem + ((1vw - 0.32rem) * 5.4))), 9.6rem);
+  line-height: 1;
+}
+
+.text-9xl {
+  font-size: min(max(6.4rem, calc(6.4rem + ((1vw - 0.32rem) * 8))), 12.8rem);
+  line-height: 1;
+}
+
+.font-thin {
+  font-weight: 100;
+}
+
+.font-extralight {
+  font-weight: 200;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
+.font-sans {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+.tracking-wide {
+  letter-spacing: 0.05rem;
+}
+
+.tracking-wider {
+  letter-spacing: 0.1rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.normal-case {
+  text-transform: none;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.non-italic {
+  font-style: normal;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.hover-underline:hover {
+  text-decoration: underline;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.leading-none {
+  line-height: 1;
+}
+
+.leading-tight {
+  line-height: 1.25;
+}
+
+.leading-snug {
+  line-height: 1.375;
+}
+
+.leading-normal {
+  line-height: 1.5;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
+}
+
+.leading-loose {
+  line-height: 2;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.overflow-ellipsis {
+  text-overflow: ellipsis;
+}
+
+.overflow-clip {
+  text-overflow: clip;
+}
+
+.break-words {
+  overflow-wrap: break-word;
+}
+
+/* Tailwind CSS inspired utility classes */
+/* OTHERS */
+
+/* OPACITY */
+
+.opacity-1 {
+  opacity: 0.1;
+}
+
+.opacity-2 {
+  opacity: 0.2;
+}
+
+.opacity-3 {
+  opacity: 0.3;
+}
+
+.opacity-4 {
+  opacity: 0.4;
+}
+
+.opacity-5 {
+  opacity: 0.5;
+}
+
+.opacity-6 {
+  opacity: 0.6;
+}
+
+.opacity-7 {
+  opacity: 0.7;
+}
+
+.opacity-8 {
+  opacity: 0.8;
+}
+
+.opacity-9 {
+  opacity: 0.9;
+}
+
+.opacity-full {
+  opacity: 1;
+}
+
+/* BOX SHADOW */
+
+.shadow-inner {
+  box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-none {
+  box-shadow: 0px 0px #000000;
+}
+
+.shadow-sx {
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.03);
+}
+
+.shadow-sm {
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+}
+
+.shadow {
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-md {
+  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-lg {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-xl {
+  box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0px 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.shadow-2xl {
+  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* CURSOR POINTER */
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Tailwind CSS inspired utility classes */
+/* SPACING */
+
+/* PADDING */
+
+.p-0 {
+  padding: 0rem;
+}
+
+.p-1 {
+  padding: min(max(0.28rem, calc(0.28rem + ((1vw - 0.32rem) * 0.15))), 0.4rem);
+}
+
+.p-2 {
+  padding: min(max(0.56rem, calc(0.56rem + ((1vw - 0.32rem) * 0.3))), 0.8rem);
+}
+
+.p-3 {
+  padding: min(max(0.84rem, calc(0.84rem + ((1vw - 0.32rem) * 0.45))), 1.2rem);
+}
+
+.p-4 {
+  padding: min(max(1.12rem, calc(1.12rem + ((1vw - 0.32rem) * 0.6))), 1.6rem);
+}
+
+.p-5 {
+  padding: min(max(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.75))), 2rem);
+}
+
+.p-6 {
+  padding: min(max(1.68rem, calc(1.68rem + ((1vw - 0.32rem) * 0.9))), 2.4rem);
+}
+
+.p-8 {
+  padding: min(max(2.24rem, calc(2.24rem + ((1vw - 0.32rem) * 1.2))), 3.2rem);
+}
+
+.p-12 {
+  padding: min(max(3.36rem, calc(3.36rem + ((1vw - 0.32rem) * 1.8))), 4.8rem);
+}
+
+.p-16 {
+  padding: min(max(4.48rem, calc(4.48rem + ((1vw - 0.32rem) * 2.4))), 6.4rem);
+}
+
+.p-20 {
+  padding: min(max(5.6rem, calc(5.6rem + ((1vw - 0.32rem) * 3))), 8rem);
+}
+
+.p-24 {
+  padding: min(max(6.72rem, calc(6.72rem + ((1vw - 0.32rem) * 3.6))), 9.6rem);
+}
+
+.py-1 {
+  padding-top: min(
+    max(0.28rem, calc(0.28rem + ((1vw - 0.32rem) * 0.15))),0.4rem);
+  padding-bottom: min(max(0.28rem, calc(0.28rem + ((1vw - 0.32rem) * 0.15))),0.4rem);
+}
+
+.py-2 {
+  padding-top: min(max(0.56rem, calc(0.56rem + ((1vw - 0.32rem) * 0.3))),0.8rem);
+  padding-bottom: min(max(0.56rem, calc(0.56rem + ((1vw - 0.32rem) * 0.3))),0.8rem);
+}
+
+.py-3 {
+  padding-top: min(max(0.84rem, calc(0.84rem + ((1vw - 0.32rem) * 0.45))),1.2rem);
+  padding-bottom: min(max(0.84rem, calc(0.84rem + ((1vw - 0.32rem) * 0.45))),1.2rem);
+}
+
+.py-4 {
+  padding-top: min(max(1.12rem, calc(1.12rem + ((1vw - 0.32rem) * 0.6))),1.6rem);
+  padding-bottom: min(max(1.12rem, calc(1.12rem + ((1vw - 0.32rem) * 0.6))),1.6rem);
+}
+
+.py-5 {
+  padding-top: min(max(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.75))), 2rem);
+  padding-bottom: min(max(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.75))),2rem);
+}
+.py-6 {
+  padding-top: min(max(1.68rem, calc(1.68rem + ((1vw - 0.32rem) * 0.9))),2.4rem);
+  padding-bottom: min(max(1.68rem, calc(1.68rem + ((1vw - 0.32rem) * 0.9))),2.4rem);
+}
+
+.py-8 {
+  padding-top: min(max(2.24rem, calc(2.24rem + ((1vw - 0.32rem) * 1.2))),3.2rem);
+  padding-bottom: min(max(2.24rem, calc(2.24rem + ((1vw - 0.32rem) * 1.2))),3.2rem);
+}
+
+.py-12 {
+  padding-top: min(max(3.36rem, calc(3.36rem + ((1vw - 0.32rem) * 1.8))),4.8rem);
+  padding-bottom: min(max(3.36rem, calc(3.36rem + ((1vw - 0.32rem) * 1.8))),4.8rem);
+}
+.py-16 {
+  padding-top: min(max(4.48rem, calc(4.48rem + ((1vw - 0.32rem) * 2.4))),6.4rem);
+  padding-bottom: min(max(4.48rem, calc(4.48rem + ((1vw - 0.32rem) * 2.4))),6.4rem);
+}
+
+.py-20 {
+  padding-top: min(max(5.6rem, calc(5.6rem + ((1vw - 0.32rem) * 3))), 8rem);
+  padding-bottom: min(max(5.6rem, calc(5.6rem + ((1vw - 0.32rem) * 3))), 8rem);
+}
+
+.py-24 {
+  padding-top: min(max(6.72rem, calc(6.72rem + ((1vw - 0.32rem) * 3.6))),9.6rem);
+  padding-bottom: min(max(6.72rem, calc(6.72rem + ((1vw - 0.32rem) * 3.6))),9.6rem);
+}
+
+.px-1 {
+  padding-left: min(max(0.28rem, calc(0.28rem + ((1vw - 0.32rem) * 0.15))),0.4rem);
+  padding-right: min(max(0.28rem, calc(0.28rem + ((1vw - 0.32rem) * 0.15))),0.4rem);
+}
+
+.px-2 {
+  padding-left: min(max(0.56rem, calc(0.56rem + ((1vw - 0.32rem) * 0.3))),0.8rem);
+  padding-right: min(max(0.56rem, calc(0.56rem + ((1vw - 0.32rem) * 0.3))),0.8rem);
+}
+
+.px-3 {
+  padding-left: min(max(0.84rem, calc(0.84rem + ((1vw - 0.32rem) * 0.45))),1.2rem);
+  padding-right: min(max(0.84rem, calc(0.84rem + ((1vw - 0.32rem) * 0.45))),1.2rem);
+}
+
+.px-4 {
+  padding-left: min( max(1.12rem, calc(1.12rem + ((1vw - 0.32rem) * 0.6))),1.6rem);
+  padding-right: min(max(1.12rem, calc(1.12rem + ((1vw - 0.32rem) * 0.6))),1.6rem);
+}
+
+.px-5 {
+  padding-left: min(max(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.75))), 2rem);
+  padding-right: min(max(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.75))), 2rem);
+}
+
+.px-6 {
+  padding-left: min(max(1.68rem, calc(1.68rem + ((1vw - 0.32rem) * 0.9))),2.4rem);
+  padding-right: min(max(1.68rem, calc(1.68rem + ((1vw - 0.32rem) * 0.9))),2.4rem);
+}
+
+.px-8 {
+  padding-left: min(max(2.24rem, calc(2.24rem + ((1vw - 0.32rem) * 1.2))),3.2rem);
+  padding-right: min(max(2.24rem, calc(2.24rem + ((1vw - 0.32rem) * 1.2))),3.2rem);
+}
+
+.px-12 {
+  padding-left: min(
+    max(3.36rem, calc(3.36rem + ((1vw - 0.32rem) * 1.8))),
+    4.8rem
+  );
+  padding-right: min(
+    max(3.36rem, calc(3.36rem + ((1vw - 0.32rem) * 1.8))),
+    4.8rem
+  );
+}
+
+.px-16 {
+  padding-left: min(
+    max(4.48rem, calc(4.48rem + ((1vw - 0.32rem) * 2.4))),
+    6.4rem
+  );
+  padding-right: min(
+    max(4.48rem, calc(4.48rem + ((1vw - 0.32rem) * 2.4))),
+    6.4rem
+  );
+}
+
+.px-20 {
+  padding-left: min(max(5.6rem, calc(5.6rem + ((1vw - 0.32rem) * 3))), 8rem);
+  padding-right: min(max(5.6rem, calc(5.6rem + ((1vw - 0.32rem) * 3))), 8rem);
+}
+
+.px-24 {
+  padding-left: min(
+    max(6.72rem, calc(6.72rem + ((1vw - 0.32rem) * 3.6))),
+    9.6rem
+  );
+  padding-right: min(
+    max(6.72rem, calc(6.72rem + ((1vw - 0.32rem) * 3.6))),
+    9.6rem
+  );
+}
+
+/* MARGIN */
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.mb-auto {
+  margin-bottom: auto;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mr-0 {
+  margin-right: 0rem;
+}
+
+.mb-0 {
+  margin-bottom: 0rem;
+}
+
+.ml-0 {
+  margin-left: 0rem;
+}
+
+.mt-0 {
+  margin-top: 0rem;
+}
+
+.mr-1 {
+  margin-right: min(
+    max(0.28rem, calc(0.28rem + ((1vw - 0.32rem) * 0.15))),
+    0.4rem
+  );
+}
+
+.mb-1 {
+  margin-bottom: min(
+    max(0.28rem, calc(0.28rem + ((1vw - 0.32rem) * 0.15))),
+    0.4rem
+  );
+}
+
+.ml-1 {
+  margin-left: min(
+    max(0.28rem, calc(0.28rem + ((1vw - 0.32rem) * 0.15))),
+    0.4rem
+  );
+}
+
+.mt-1 {
+  margin-top: min(
+    max(0.28rem, calc(0.28rem + ((1vw - 0.32rem) * 0.15))),
+    0.4rem
+  );
+}
+
+.mr-2 {
+  margin-right: min(
+    max(0.56rem, calc(0.56rem + ((1vw - 0.32rem) * 0.3))),
+    0.8rem
+  );
+}
+
+.mb-2 {
+  margin-bottom: min(
+    max(0.56rem, calc(0.56rem + ((1vw - 0.32rem) * 0.3))),
+    0.8rem
+  );
+}
+
+.ml-2 {
+  margin-left: min(
+    max(0.56rem, calc(0.56rem + ((1vw - 0.32rem) * 0.3))),
+    0.8rem
+  );
+}
+
+.mt-2 {
+  margin-top: min(
+    max(0.56rem, calc(0.56rem + ((1vw - 0.32rem) * 0.3))),
+    0.8rem
+  );
+}
+
+.mr-3 {
+  margin-right: min(
+    max(0.84rem, calc(0.84rem + ((1vw - 0.32rem) * 0.45))),
+    1.2rem
+  );
+}
+
+.mb-3 {
+  margin-bottom: min(
+    max(0.84rem, calc(0.84rem + ((1vw - 0.32rem) * 0.45))),
+    1.2rem
+  );
+}
+
+.ml-3 {
+  margin-left: min(
+    max(0.84rem, calc(0.84rem + ((1vw - 0.32rem) * 0.45))),
+    1.2rem
+  );
+}
+
+.mt-3 {
+  margin-top: min(
+    max(0.84rem, calc(0.84rem + ((1vw - 0.32rem) * 0.45))),
+    1.2rem
+  );
+}
+
+.mr-4 {
+  margin-right: min(
+    max(1.12rem, calc(1.12rem + ((1vw - 0.32rem) * 0.6))),
+    1.6rem
+  );
+}
+
+.mb-4 {
+  margin-bottom: min(
+    max(1.12rem, calc(1.12rem + ((1vw - 0.32rem) * 0.6))),
+    1.6rem
+  );
+}
+
+.ml-4 {
+  margin-left: min(
+    max(1.12rem, calc(1.12rem + ((1vw - 0.32rem) * 0.6))),
+    1.6rem
+  );
+}
+
+.mt-4 {
+  margin-top: min(
+    max(1.12rem, calc(1.12rem + ((1vw - 0.32rem) * 0.6))),
+    1.6rem
+  );
+}
+
+.mr-5 {
+  margin-right: min(max(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.75))), 2rem);
+}
+
+.mb-5 {
+  margin-bottom: min(
+    max(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.75))),
+    2rem
+  );
+}
+
+.ml-5 {
+  margin-left: min(max(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.75))), 2rem);
+}
+
+.mt-5 {
+  margin-top: min(max(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.75))), 2rem);
+}
+
+.mr-6 {
+  margin-right: min(
+    max(1.68rem, calc(1.68rem + ((1vw - 0.32rem) * 0.9))),
+    2.4rem
+  );
+}
+
+.mb-6 {
+  margin-bottom: min(
+    max(1.68rem, calc(1.68rem + ((1vw - 0.32rem) * 0.9))),
+    2.4rem
+  );
+}
+
+.ml-6 {
+  margin-left: min(
+    max(1.68rem, calc(1.68rem + ((1vw - 0.32rem) * 0.9))),
+    2.4rem
+  );
+}
+
+.mt-6 {
+  margin-top: min(
+    max(1.68rem, calc(1.68rem + ((1vw - 0.32rem) * 0.9))),
+    2.4rem
+  );
+}
+
+.mr-8 {
+  margin-right: min(
+    max(2.24rem, calc(2.24rem + ((1vw - 0.32rem) * 1.2))),
+    3.2rem
+  );
+}
+
+.mb-8 {
+  margin-bottom: min(
+    max(2.24rem, calc(2.24rem + ((1vw - 0.32rem) * 1.2))),
+    3.2rem
+  );
+}
+
+.ml-8 {
+  margin-left: min(
+    max(2.24rem, calc(2.24rem + ((1vw - 0.32rem) * 1.2))),
+    3.2rem
+  );
+}
+
+.mt-8 {
+  margin-top: min(
+    max(2.24rem, calc(2.24rem + ((1vw - 0.32rem) * 1.2))),
+    3.2rem
+  );
+}
+
+.mr-12 {
+  margin-right: min(
+    max(3.36rem, calc(3.36rem + ((1vw - 0.32rem) * 1.8))),
+    4.8rem
+  );
+}
+
+.mb-12 {
+  margin-bottom: min(
+    max(3.36rem, calc(3.36rem + ((1vw - 0.32rem) * 1.8))),
+    4.8rem
+  );
+}
+
+.ml-12 {
+  margin-left: min(
+    max(3.36rem, calc(3.36rem + ((1vw - 0.32rem) * 1.8))),
+    4.8rem
+  );
+}
+
+.mt-12 {
+  margin-top: min(
+    max(3.36rem, calc(3.36rem + ((1vw - 0.32rem) * 1.8))),
+    4.8rem
+  );
+}
+
+.mr-16 {
+  margin-right: min(
+    max(4.48rem, calc(4.48rem + ((1vw - 0.32rem) * 2.4))),
+    6.4rem
+  );
+}
+
+.mb-16 {
+  margin-bottom: min(
+    max(4.48rem, calc(4.48rem + ((1vw - 0.32rem) * 2.4))),
+    6.4rem
+  );
+}
+
+.ml-16 {
+  margin-left: min(
+    max(4.48rem, calc(4.48rem + ((1vw - 0.32rem) * 2.4))),
+    6.4rem
+  );
+}
+
+.mt-16 {
+  margin-top: min(
+    max(4.48rem, calc(4.48rem + ((1vw - 0.32rem) * 2.4))),
+    6.4rem
+  );
+}
+
+.mr-20 {
+  margin-right: min(max(5.6rem, calc(5.6rem + ((1vw - 0.32rem) * 3))), 8rem);
+}
+
+.mb-20 {
+  margin-bottom: min(max(5.6rem, calc(5.6rem + ((1vw - 0.32rem) * 3))), 8rem);
+}
+
+.ml-20 {
+  margin-left: min(max(5.6rem, calc(5.6rem + ((1vw - 0.32rem) * 3))), 8rem);
+}
+
+.mt-20 {
+  margin-top: min(max(5.6rem, calc(5.6rem + ((1vw - 0.32rem) * 3))), 8rem);
+}
+.mr-24 {
+  margin-right: min(
+    max(6.72rem, calc(6.72rem + ((1vw - 0.32rem) * 3.6))),
+    9.6rem
+  );
+}
+
+.mb-24 {
+  margin-bottom: min(
+    max(6.72rem, calc(6.72rem + ((1vw - 0.32rem) * 3.6))),
+    9.6rem
+  );
+}
+
+.ml-24 {
+  margin-left: min(
+    max(6.72rem, calc(6.72rem + ((1vw - 0.32rem) * 3.6))),
+    9.6rem
+  );
+}
+
+.mt-24 {
+  margin-top: min(
+    max(6.72rem, calc(6.72rem + ((1vw - 0.32rem) * 3.6))),
+    9.6rem
+  );
+}
+
+.ct-section.space-y-0 .ct-section-inner-wrap > * + *,
+.space-y-0:not(.ct-section) > * + * {
+  margin-top: 0;
+}
+
+/* SPACE BETWEEN */
+
+.ct-section.space-y-1 .ct-section-inner-wrap > * + *,
+.space-y-1:not(.ct-section) > * + * {
+  margin-top: min(
+    max(0.28rem, calc(0.28rem + ((1vw - 0.32rem) * 0.15))),
+    0.4rem
+  );
+}
+
+.ct-section.space-y-2 .ct-section-inner-wrap > * + *,
+.space-y-2:not(.ct-section) > * + * {
+  margin-top: min(
+    max(0.56rem, calc(0.56rem + ((1vw - 0.32rem) * 0.3))),
+    0.8rem
+  );
+}
+
+.ct-section.space-y-3 .ct-section-inner-wrap > * + *,
+.space-y-3:not(.ct-section) > * + * {
+  margin-top: min(
+    max(0.84rem, calc(0.84rem + ((1vw - 0.32rem) * 0.45))),
+    1.2rem
+  );
+}
+
+.ct-section.space-y-4 .ct-section-inner-wrap > * + *,
+.space-y-4:not(.ct-section) > * + * {
+  margin-top: min(
+    max(1.12rem, calc(1.12rem + ((1vw - 0.32rem) * 0.6))),
+    1.6rem
+  );
+}
+
+.ct-section.space-y-6 .ct-section-inner-wrap > * + *,
+.space-y-6:not(.ct-section) > * + * {
+  margin-top: min(
+    max(1.68rem, calc(1.68rem + ((1vw - 0.32rem) * 0.9))),
+    2.4rem
+  );
+}
+
+.ct-section.space-y-8 .ct-section-inner-wrap > * + *,
+.space-y-8:not(.ct-section) > * + * {
+  margin-top: min(
+    max(2.24rem, calc(2.24rem + ((1vw - 0.32rem) * 1.2))),
+    3.2rem
+  );
+}
+
+.ct-section.space-y-10 .ct-section-inner-wrap > * + *,
+.space-y-10:not(.ct-section) > * + * {
+  margin-top: min(max(2.8rem, calc(2.8rem + ((1vw - 0.32rem) * 1.5))), 4rem);
+}
+
+.ct-section.space-y-12 .ct-section-inner-wrap > * + *,
+.space-y-12:not(.ct-section) > * + * {
+  margin-top: min(
+    max(3.36rem, calc(3.36rem + ((1vw - 0.32rem) * 1.8))),
+    4.8rem
+  );
+}
+
+.ct-section.space-y-14 .ct-section-inner-wrap > * + *,
+.space-y-14:not(.ct-section) > * + * {
+  margin-top: min(
+    max(3.92rem, calc(3.92rem + ((1vw - 0.32rem) * 2.1))),
+    5.6rem
+  );
+}
+
+.ct-section.space-y-16 .ct-section-inner-wrap > * + *,
+.space-y-16:not(.ct-section) > * + * {
+  margin-top: min(
+    max(4.48rem, calc(4.48rem + ((1vw - 0.32rem) * 2.4))),
+    6.4rem
+  );
+}
+
+.ct-section.space-y-20 .ct-section-inner-wrap > * + *,
+.space-y-20:not(.ct-section) > * + * {
+  margin-top: min(max(5.6rem, calc(5.6rem + ((1vw - 0.32rem) * 3))), 8rem);
+}
+
+/* Tailwind CSS inspired utility classes */
+/* BORDERS */
+
+/* BORDER WIDTH */
+
+.border-none {
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-style: solid;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+}
+
+.border-px {
+  border-top-width: 1px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-style: solid;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+}
+
+.border-2 {
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-left-width: 2px;
+  border-bottom-width: 2px;
+  border-left-style: solid;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+}
+
+.border-t {
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+.border-r {
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.border-l {
+  border-left-width: 1px;
+  border-left-style: solid;
+}
+
+/* BORDER RADIUS */
+
+.rounded-sm {
+  border-radius: 0.2rem;
+}
+
+.rounded {
+  border-radius: 0.4rem;
+}
+
+.rounded-md {
+  border-radius: 0.6rem;
+}
+
+.rounded-lg {
+  border-radius: 0.8rem;
+}
+
+.rounded-full {
+  border-radius: 999.901rem;
+}
+
+.rounded-r-lg {
+  border-top-right-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+}
+
+.rounded-l-lg {
+  border-top-left-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+}
+
+.rounded-b-lg {
+  border-bottom-right-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+}
+
+.rounded-t-lg {
+  border-top-right-radius: 0.8rem;
+  border-top-left-radius: 0.8rem;
+}
+
+.rounded-r {
+  border-top-right-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+}
+
+.rounded-l {
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+}
+
+.rounded-b {
+  border-bottom-right-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+}
+
+.rounded-t {
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
+}
+
+/* Tailwind CSS inspired utility classes */
+/* EXTRAS */
+
+/* BUTTONS */
+
+.btn-s:hover {
+  transform: translateY(-5px);
+}
+.btn-s {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+  transition-duration: 0.4s;
+  transition-property: all;
+  border-radius: 0.4rem;
+}
+@media (max-width: 1168px) {
+  .btn-s {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .btn-s {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+}
+@media (max-width: 479px) {
+  .btn-s {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+  }
+}
+
+.btn-m:hover {
+  transform: translateY(-5px);
+}
+.btn-m {
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  border-radius: 0.6rem;
+  transition-duration: 0.4s;
+  transition-property: all;
+}
+@media (max-width: 1168px) {
+  .btn-m {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2.8rem;
+    padding-right: 2.8rem;
+  }
+}
+@media (max-width: 767px) {
+  .btn-m {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
+}
+@media (max-width: 479px) {
+  .btn-m {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2.8rem;
+    padding-right: 2.8rem;
+    width: 100%;
+  }
+}
+
+.btn-l:hover {
+  transform: translateY(-5px);
+}
+.btn-l {
+  padding-left: 6.4rem;
+  padding-right: 6.4rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  border-radius: 0.8rem;
+  transition-duration: 0.4s;
+  transition-property: all;
+}
+@media (max-width: 1168px) {
+  .btn-l {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 5.4rem;
+    padding-right: 5.4rem;
+  }
+}
+@media (max-width: 991px) {
+  .btn-l {
+    padding-left: 4.4rem;
+    padding-right: 4.4rem;
+  }
+}
+@media (max-width: 767px) {
+  .btn-l {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-left: 6.4rem;
+    padding-right: 6.4rem;
+  }
+}
+@media (max-width: 479px) {
+  .btn-l {
+    padding-left: 5.4rem;
+    padding-right: 5.4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+  }
+}
+
+/* Tailwind CSS inspired utility classes */
+/* LAYOUT */
+
+/* OVERFLOW */
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
+/* OBJECT-FIT */
+
+.object-cover {
+  object-fit: cover;
+}
+
+.object-bottom {
+  object-position: bottom;
+}
+
+.object-left {
+  object-position: left;
+}
+
+.object-right {
+  object-position: right;
+}
+
+.object-top {
+  object-position: top;
+}
+
+.object-contain {
+  object-fit: contain;
+}
+
+/* Z-INDEX */
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.z-30 {
+  z-index: 30;
+}
+
+.z-40 {
+  z-index: 40;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.z-100 {
+  z-index: 100;
+}
+
+.z-1000 {
+  z-index: 1000;
+}
+
+.z-2000 {
+  z-index: 2000;
+}
+
+.z-5000 {
+  z-index: 5000;
+}
+
+.z-9999 {
+  z-index: 9999;
+}
+
+.z-auto {
+  z-index: auto;
+}
+
+
+/* SCALE */
+
+.scale-down-4,
+.hover-scale-down-4:hover {
+  transform: scale(0.125);
+}
+
+.scale-down-3,
+.hover-scale-down-3:hover {
+  transform: scale(0.25);
+}
+
+.scale-down-2,
+.hover-scale-down-2:hover {
+  transform: scale(0.5);
+}
+
+.scale-down-1,
+.hover-scale-down-1:hover {
+  transform: scale(0.75);
+}
+
+.scale-none,
+.hover-scale-none:hover {
+  transform: scale(1);
+}
+
+.scale-up-1,
+.hover-scale-up-1:hover {
+  transform: scale(1.125);
+}
+
+.scale-up-2,
+.hover-scale-up-2:hover {
+  transform: scale(1.25);
+}
+
+.scale-up-3,
+.hover-scale-up-3:hover {
+  transform: scale(1.5);
+}
+
+.scale-up-4,
+.hover-scale-up-4:hover {
+  transform: scale(1.75);
+}
+
+/* OBJECT */
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.object-scale-down {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+.object-none {
+  -o-object-fit: none;
+     object-fit: none;
+}
