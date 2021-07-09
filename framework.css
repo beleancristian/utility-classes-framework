@@ -816,7 +816,7 @@ html {
 
 .ct-section.space-y-2 .ct-section-inner-wrap > * + *,
 .space-y-2:not(.ct-section) > * + * {
-  margin-top: min(max(0.56rem, calc(0.56rem + ((1vw - 0.32rem) * 0.3))),0.8rem;
+  margin-top: min(max(0.56rem, calc(0.56rem + ((1vw - 0.32rem) * 0.3))),0.8rem);
 }
 
 .ct-section.space-y-3 .ct-section-inner-wrap > * + *,
