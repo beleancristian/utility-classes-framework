@@ -222,12 +222,24 @@ html {
     "Liberation Mono", "Courier New", monospace;
 }
 
-.tracking-wide {
+.tracking-u1 {
   letter-spacing: 0.05rem;
 }
 
-.tracking-wider {
+.tracking-u2 {
   letter-spacing: 0.1rem;
+}
+
+.tracking-u3 {
+  letter-spacing: 0.15rem;
+}
+
+.tracking-u4 {
+  letter-spacing: 0.2rem;
+}
+
+.tracking-u5 {
+  letter-spacing: 0.25rem;
 }
 
 .text-left {
