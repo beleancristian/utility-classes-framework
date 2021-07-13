@@ -931,8 +931,18 @@ html {
   border-top-style: solid;
 }
 
+.border-t2 {
+  border-top-width: 2px;
+  border-top-style: solid;
+}
+
 .border-r {
   border-right-width: 1px;
+  border-right-style: solid;
+}
+
+.border-r2 {
+  border-right-width: 2px;
   border-right-style: solid;
 }
 
@@ -941,8 +951,18 @@ html {
   border-bottom-style: solid;
 }
 
+.border-b2 {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
 .border-l {
   border-left-width: 1px;
+  border-left-style: solid;
+}
+
+.border-l2 {
+  border-left-width: 2px;
   border-left-style: solid;
 }
 
