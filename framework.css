@@ -499,8 +499,7 @@ html {
 }
 
 .py-1 {
-  padding-top: min(
-    max(0.28rem, calc(0.28rem + ((1vw - 0.32rem) * 0.15))),0.4rem);
+  padding-top: min(max(0.28rem, calc(0.28rem + ((1vw - 0.32rem) * 0.15))),0.4rem);
   padding-bottom: min(max(0.28rem, calc(0.28rem + ((1vw - 0.32rem) * 0.15))),0.4rem);
 }
 
