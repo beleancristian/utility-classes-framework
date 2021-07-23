@@ -132,7 +132,7 @@ html {
 }
 
 .text-2xl {
-    font-size: min(max(2.04rem, calc(2.04rem + ((1vw - 0.32rem) * 0.45))),2.4rem);
+  font-size: min(max(2.04rem, calc(2.04rem + ((1vw - 0.32rem) * 0.45))),2.4rem);
   line-height: min(max(2.4rem, calc(2.4rem + ((1vw - 0.32rem) * 1))), 3.2rem);
 }
 
@@ -223,11 +223,11 @@ html {
 }
 
 .tracking-d3 {
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.001rem;
 }
 
 .tracking-d2 {
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.005rem;
 }
 
 .tracking-d1 {
