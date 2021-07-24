@@ -82,8 +82,7 @@ html {
 }
 
 .h3 {
-  font-size: min(
-    max(2.73rem, calc(2.73rem + ((1vw - 0.32rem) * 1.4625))),3.9rem);
+  font-size: min(max(2.73rem, calc(2.73rem + ((1vw - 0.32rem) * 1.4625))),3.9rem);
   line-height: min(max(3.54rem, calc(3.54rem + ((1vw - 0.32rem) * 0.95))),4.3rem);
   font-weight: 700;
 }
