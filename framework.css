@@ -825,12 +825,14 @@ html {
   margin-top: min(max(6.72rem, calc(6.72rem + ((1vw - 0.32rem) * 3.6))),9.6rem);
 }
 
+
+/* SPACE BETWEEN */
+
+
 .ct-section.space-y-0 .ct-section-inner-wrap > * + *,
 .space-y-0:not(.ct-section) > * + * {
   margin-top: 0;
 }
-
-/* SPACE BETWEEN */
 
 .ct-section.space-y-1 .ct-section-inner-wrap > * + *,
 .space-y-1:not(.ct-section) > * + * {
