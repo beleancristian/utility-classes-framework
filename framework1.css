@@ -1,0 +1,527 @@
+/* AutomaticCSS inspired CSS Classes */
+/* OWL Spacing */
+
+.owl--xs>*+* {
+  margin-top: 1.896rem;
+  margin-top: calc(0.6666666667rem + (0.1666666667 * ((100vw - 20rem) / 60)));
+  margin-top: clamp(0.6666666667rem, calc(0.2777777778vw + 0.6111111111rem), 0.8333333333rem);
+}
+
+.owl--s>*+* {
+  margin-top: 2.133rem;
+  margin-top: calc(1rem + (0.25 * ((100vw - 20rem) / 60)));
+  margin-top: clamp(1rem, calc(0.4166666667vw + 0.9166666667rem), 1.25rem);
+}
+
+.owl--m>*+* {
+  margin-top: 2.4rem;
+  margin-top: calc(1.5rem + (0.375 * ((100vw - 20rem) / 60)));
+  margin-top: clamp(1.5rem, calc(0.625vw + 1.375rem), 1.875rem);
+}
+
+.owl--l>*+* {
+  margin-top: 2.7rem;
+  margin-top: calc(1.9995rem + (0.813 * ((100vw - 20rem) / 60)));
+  margin-top: clamp(1.9995rem, calc(1.355vw + 1.7285rem), 2.8125rem);
+}
+
+.owl--xl>*+* {
+  margin-top: 3.038rem;
+  margin-top: calc(2.6653335rem + (1.5534165 * ((100vw - 20rem) / 60)));
+  margin-top: clamp(2.6653335rem, calc(2.5890275vw + 2.147528rem), 4.21875rem);
+}
+
+.owl--xxl>*+* {
+  margin-top: 3.42rem;
+  margin-top: calc(3.5528895555rem + (2.7752354445 * ((100vw - 20rem) / 60)));
+  margin-top: clamp(3.5528895555rem, calc(4.6253924075vw + 2.627811074rem), 6.328125rem);
+}
+
+
+
+/* AutomaticCSS inspired CSS Classes */
+/* Padding */
+
+
+.pad--xs {
+  padding: 1.896rem;
+  padding: calc(0.6666666667rem + (0.1666666667 * ((100vw - 20rem) / 60)));
+  padding: clamp(0.6666666667rem, calc(0.2777777778vw + 0.6111111111rem), 0.8333333333rem);
+}
+
+.pad--s {
+  padding: 2.133rem;
+  padding: calc(1rem + (0.25 * ((100vw - 20rem) / 60)));
+  padding: clamp(1rem, calc(0.4166666667vw + 0.9166666667rem), 1.25rem);
+}
+
+.pad--m {
+  padding: 2.4rem;
+  padding: calc(1.5rem + (0.375 * ((100vw - 20rem) / 60)));
+  padding: clamp(1.5rem, calc(0.625vw + 1.375rem), 1.875rem);
+}
+
+.pad--l {
+  padding: 2.7rem;
+  padding: calc(1.9995rem + (0.813 * ((100vw - 20rem) / 60)));
+  padding: clamp(1.9995rem, calc(1.355vw + 1.7285rem), 2.8125rem);
+}
+
+.pad--xl {
+  padding: 3.038rem;
+  padding: calc(2.6653335rem + (1.5534165 * ((100vw - 20rem) / 60)));
+  padding: clamp(2.6653335rem, calc(2.5890275vw + 2.147528rem), 4.21875rem);
+}
+
+.pad--xxl {
+  padding: 3.42rem;
+  padding: calc(3.5528895555rem + (2.7752354445 * ((100vw - 20rem) / 60)));
+  padding: clamp(3.5528895555rem, calc(4.6253924075vw + 2.627811074rem), 6.328125rem);
+}
+
+
+/* AutomaticCSS inspired CSS Classes */
+/* Heading sizes */
+
+
+h1 {
+  font-size: 2.565rem;
+  font-size: calc(2.368593037rem + (0.81194615 * ((100vw - 20rem) / 60)));
+  font-size: clamp(2.368593037rem, calc(1.3532435833vw + 2.0979443203rem), 3.180539187rem);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2.28rem;
+  font-size: calc(1.776889rem + (0.4724315 * ((100vw - 20rem) / 60)));
+  font-size: clamp(1.776889rem, calc(0.7873858333vw + 1.6194118333rem), 2.2493205rem);
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 2.025rem;
+  font-size: calc(1.333rem + (0.25775 * ((100vw - 20rem) / 60)));
+  font-size: clamp(1.333rem, calc(0.4295833333vw + 1.2470833333rem), 1.59075rem);
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-size: calc(1rem + (0.125 * ((100vw - 20rem) / 60)));
+  font-size: clamp(1rem, calc(0.2083333333vw + 0.9583333333rem), 1.125rem);
+  line-height: 1.2;
+}
+
+h5 {
+  font-size: 1.42rem;
+  font-size: calc(0.7072135785rem + (0.0884016973 * ((100vw - 20rem) / 60)));
+  font-size: max(0.6875 * 1rem, 0.7956152758 * 1rem);
+  line-height: 1.2;
+}
+
+h6 {
+  font-size: 1.26rem;
+  font-size: calc(0.5001510456rem + (0.0625188807 * ((100vw - 20rem) / 60)));
+  font-size: max(0.625 * 1rem, 0.5626699263 * 1rem);
+  line-height: 1.2;
+}
+
+
+
+
+/* AutomaticCSS inspired CSS Classes */
+/* Text Sizes */
+
+.text--xs {
+  font-size: 1.26rem;
+  font-size: calc(0.5001510456rem + (0.0625188807 * ((100vw - 20rem) / 60)));
+  font-size: max(0.625 * 1rem, 0.5626699263 * 1rem);
+}
+
+.text--s {
+  font-size: 1.42rem;
+  font-size: calc(0.7072135785rem + (0.0884016973 * ((100vw - 20rem) / 60)));
+  font-size: max(0.6875 * 1rem, 0.7956152758 * 1rem);
+}
+
+.text--m {
+  font-size: 1.8rem;
+  font-size: calc(1rem + (0.125 * ((100vw - 20rem) / 60)));
+  font-size: clamp(1rem, calc(0.2083333333vw + 0.9583333333rem), 1.125rem);
+}
+
+.text--l {
+  font-size: 2.025rem;
+  font-size: calc(1.333rem + (0.25775 * ((100vw - 20rem) / 60)));
+  font-size: clamp(1.333rem, calc(0.4295833333vw + 1.2470833333rem), 1.59075rem);
+}
+
+.text--xl {
+  font-size: 2.28rem;
+  font-size: calc(1.776889rem + (0.4724315 * ((100vw - 20rem) / 60)));
+  font-size: clamp(1.776889rem, calc(0.7873858333vw + 1.6194118333rem), 2.2493205rem);
+}
+
+.text--xxl {
+  font-size: 2.565rem;
+  font-size: calc(2.368593037rem + (0.81194615 * ((100vw - 20rem) / 60)));
+  font-size: clamp(2.368593037rem, calc(1.3532435833vw + 2.0979443203rem), 3.180539187rem);
+}
+
+.text--xs.text--larger {
+  font-size: 0.89375rem;
+  font-size: calc(0.5501661502rem + (0.2938387393 * ((100vw - 20rem) / 60)));
+  font-size: clamp(0.5501661502rem, calc(0.4897312322vw + 0.4522199037rem), 0.8440048895rem);
+}
+
+.text--s.text--larger {
+  font-size: 0.9625rem;
+  font-size: calc(0.7779349364rem + (0.4154879774 * ((100vw - 20rem) / 60)));
+  font-size: clamp(0.7779349364rem, calc(0.6924799623vw + 0.6394389439rem), 1.1934229137rem);
+}
+
+.text--m.text--larger {
+  font-size: 1.2375rem;
+  font-size: calc(1.1rem + (0.5875 * ((100vw - 20rem) / 60)));
+  font-size: clamp(1.1rem, calc(0.9791666667vw + 0.9041666667rem), 1.6875rem);
+}
+
+.text--l.text--larger {
+  font-size: 1.375rem;
+  font-size: calc(1.4663rem + (0.919825 * ((100vw - 20rem) / 60)));
+  font-size: clamp(1.4663rem, calc(1.5330416667vw + 1.1596916667rem), 2.386125rem);
+}
+
+.text--xl.text--larger {
+  font-size: 1.58125rem;
+  font-size: calc(1.9545779rem + (1.41940285 * ((100vw - 20rem) / 60)));
+  font-size: clamp(1.9545779rem, calc(2.3656714167vw + 1.4814436167rem), 3.37398075rem);
+}
+
+.text--xxl.text--larger {
+  font-size: 1.7875rem;
+  font-size: calc(2.6054523407rem + (2.1653564398 * ((100vw - 20rem) / 60)));
+  font-size: clamp(2.6054523407rem, calc(3.6089273997vw + 1.8836668608rem), 4.7708087805rem);
+}
+
+h1.text--larger {
+  font-size: 1.7875rem;
+  font-size: calc(2.6054523407rem + (2.1653564398 * ((100vw - 20rem) / 60)));
+  font-size: clamp(2.6054523407rem, calc(3.6089273997vw + 1.8836668608rem), 4.7708087805rem);
+}
+
+h2.text--larger {
+  font-size: 1.58125rem;
+  font-size: calc(1.9545779rem + (1.41940285 * ((100vw - 20rem) / 60)));
+  font-size: clamp(1.9545779rem, calc(2.3656714167vw + 1.4814436167rem), 3.37398075rem);
+}
+
+h3.text--larger {
+  font-size: 1.375rem;
+  font-size: calc(1.4663rem + (0.919825 * ((100vw - 20rem) / 60)));
+  font-size: clamp(1.4663rem, calc(1.5330416667vw + 1.1596916667rem), 2.386125rem);
+}
+
+h4.text--larger {
+  font-size: 1.2375rem;
+  font-size: calc(1.1rem + (0.5875 * ((100vw - 20rem) / 60)));
+  font-size: clamp(1.1rem, calc(0.9791666667vw + 0.9041666667rem), 1.6875rem);
+}
+
+h5.text--larger {
+  font-size: 0.9625rem;
+  font-size: calc(0.7779349364rem + (0.4154879774 * ((100vw - 20rem) / 60)));
+  font-size: clamp(0.7779349364rem, calc(0.6924799623vw + 0.6394389439rem), 1.1934229137rem);
+}
+
+h6.text--larger {
+  font-size: 0.89375rem;
+  font-size: calc(0.5501661502rem + (0.2938387393 * ((100vw - 20rem) / 60)));
+  font-size: clamp(0.5501661502rem, calc(0.4897312322vw + 0.4522199037rem), 0.8440048895rem);
+}
+
+
+
+
+/* AutomaticCSS inspired CSS Classes */
+/* Text weights */
+
+.text--100 {
+
+  font-weight: 100;
+}
+
+.text--200 {
+  font-weight: 200;
+}
+
+.text--300 {
+  font-weight: 300;
+}
+
+.text--400 {
+  font-weight: 400;
+}
+
+.text--500 {
+  font-weight: 500;
+}
+
+.text--600 {
+  font-weight: 600;
+}
+
+.text--700 {
+  font-weight: 700;
+}
+
+.text--800 {
+  font-weight: 800;
+}
+
+.text--900 {
+  font-weight: 900;
+}
+
+.text--bold {
+  font-weight: bold;
+}
+
+.text--italic {
+  font-style: italic;
+}
+
+.text--oblique {
+  font-style: oblique;
+}
+
+/* AutomaticCSS inspired CSS Classes */
+/* Text decorations */
+
+.text--decoration-none {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.text--underline {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.text--underline-wavy {
+  -webkit-text-decoration: underline wavy;
+  text-decoration: underline wavy;
+}
+
+.text--underline-dotted {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+.text--underline-double {
+  -webkit-text-decoration: underline double;
+  text-decoration: underline double;
+}
+
+.text--underline-dashed {
+  -webkit-text-decoration: underline dashed;
+  text-decoration: underline dashed;
+}
+
+.text--overline {
+  -webkit-text-decoration: overline;
+  text-decoration: overline;
+}
+
+.text--line-through {
+  -webkit-text-decoration: line-through;
+  text-decoration: line-through;
+}
+
+.text--transform-none {
+  text-transform: none;
+}
+
+.text--uppercase {
+  text-transform: uppercase;
+}
+
+.text--lowercase {
+  text-transform: lowercase;
+}
+
+.text--capitalize {
+  text-transform: capitalize;
+}
+
+.text--left {
+  text-align: left;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.text--right {
+  text-align: right;
+}
+
+.text--justify {
+  text-align: justify;
+}
+
+
+/* AutomaticCSS inspired CSS Classes */
+/* Opacity */
+
+.opacity--5 {
+  opacity: 0.05;
+}
+
+.opacity--10 {
+  opacity: 0.1;
+}
+
+.opacity--20 {
+  opacity: 0.2;
+}
+
+.opacity--30 {
+  opacity: 0.3;
+}
+
+.opacity--40 {
+  opacity: 0.4;
+}
+
+.opacity--50 {
+  opacity: 0.5;
+}
+
+.opacity--60 {
+  opacity: 0.6;
+}
+
+.opacity--70 {
+  opacity: 0.7;
+}
+
+.opacity--80 {
+  opacity: 0.8;
+}
+
+.opacity--90 {
+  opacity: 0.9;
+}
+
+.opacity--95 {
+  opacity: 0.95;
+}
+
+
+/* AutomaticCSS inspired CSS Classes */
+/* Box shadows */
+
+.box-shadow--m {
+  box-shadow: 0 4px 4px -10px rgba(0, 0, 0, 0.04), 0 13px 13px -10px rgba(0, 0, 0, 0.06), 0 40px 60px -10px rgba(0, 0, 0, 0.08);
+}
+
+.box-shadow--l {
+  box-shadow: 0 2.7px 3.6px -5px rgba(0, 0, 0, 0.04), 0 7.5px 10px -5px rgba(0, 0, 0, 0.06), 0 18px 24.1px -5px rgba(0, 0, 0, 0.08), 0 60px 80px -5px rgba(0, 0, 0, 0.1);
+}
+
+.box-shadow--xl {
+  box-shadow: 0 2.2px 2.8px -5px rgba(0, 0, 0, 0.01), 0 5.3px 6.7px -5px rgba(0, 0, 0, 0.02), 0 10px 12.5px -5px rgba(0, 0, 0, 0.04), 0 17.9px 22.3px -5px rgba(0, 0, 0, 0.06), 0 33.4px 41.8px -5px rgba(0, 0, 0, 0.08), 0 80px 100px -5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* AutomaticCSS inspired CSS Classes */
+/* Element width */
+
+.width--xs:not([class*="breakout--"]) {
+  width: 100%;
+  max-width: calc((80 * 0.1) * 1rem);
+}
+
+.width--s:not([class*="breakout--"]) {
+  width: 100%;
+  max-width: calc((80 * 0.2) * 1rem);
+}
+
+.width--m:not([class*="breakout--"]) {
+  width: 100%;
+  max-width: calc((80 * 0.4) * 1rem);
+}
+
+.width--l:not([class*="breakout--"]) {
+  width: 100%;
+  max-width: calc((80 * 0.6) * 1rem);
+}
+
+.width--xl:not([class*="breakout--"]) {
+  width: 100%;
+  max-width: calc((80 * 0.8) * 1rem);
+}
+
+.width--xxl:not([class*="breakout--"]) {
+  width: 100%;
+  max-width: calc((80 * 0.9) * 1rem);
+}
+
+.width--vp-max:not([class*="breakout--"]) {
+  width: 100%;
+  max-width: calc((80 - 1.875 * 2) * 1rem);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.width--50:not([class*="breakout--"]) {
+  width: 100%;
+  max-width: calc((80 / 2) * 1rem);
+}
+
+.width--full:not([class*="breakout--"]) {
+  width: 100%;
+  max-width: 100%;
+}
+
+.width--auto {
+  width: auto !important;
+  width: 100%;
+}
+
+
+/* AutomaticCSS inspired CSS Classes */
+/* Rounding borders */
+
+.rounded--xs {
+  border-radius: 0.4444444444rem;
+}
+
+.rounded--s {
+  border-radius: 0.6666666667rem;
+}
+
+.rounded--m {
+  border-radius: 1rem;
+}
+
+.rounded--l {
+  border-radius: 1.5rem;
+}
+
+.rounded--xl {
+  border-radius: 2.25rem;
+}
+
+.rounded--xxl {
+  border-radius: 3.375rem;
+}
+
+.rounded--50 {
+  border-radius: 50%;
+}
+
+.rounded--circle {
+  border-radius: 50%;
+}
