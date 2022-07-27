@@ -3,7 +3,7 @@
     Keep paragraph width at a certain max width
 */
 
-h1, h2 {
+h1, h2, h3 {
   max-width: 30ch;
 }
 
