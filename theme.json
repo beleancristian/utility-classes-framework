@@ -1,0 +1,60 @@
+{
+  "version": 2,
+  "settings": {
+    "color": {
+      "palette": [
+        { "slug": "primary", "color": "var(--color-primary)", "name": "Primary" },
+        { "slug": "secondary", "color": "var(--color-secondary)", "name": "Secondary" },
+        { "slug": "accent", "color": "var(--color-accent)", "name": "Accent" },
+        { "slug": "foreground", "color": "var(--color-text)", "name": "Foreground" },
+        { "slug": "background", "color": "var(--color-background)", "name": "Background" },
+        { "slug": "gray-100", "color": "var(--color-gray-100)", "name": "Gray 100" },
+        { "slug": "gray-900", "color": "var(--color-gray-900)", "name": "Gray 900" }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "var(--font-sans)",
+          "slug": "sans",
+          "name": "Sans-serif"
+        },
+        {
+          "fontFamily": "var(--font-serif)",
+          "slug": "serif",
+          "name": "Serif"
+        }
+      ],
+      "fontSizes": [
+        { "slug": "xs", "size": "var(--font-size-xs)", "name": "Extra Small" },
+        { "slug": "sm", "size": "var(--font-size-sm)", "name": "Small" },
+        { "slug": "base", "size": "var(--font-size-base)", "name": "Base" },
+        { "slug": "lg", "size": "var(--font-size-lg)", "name": "Large" },
+        { "slug": "xl", "size": "var(--font-size-xl)", "name": "Extra Large" },
+        { "slug": "2xl", "size": "var(--font-size-2xl)", "name": "2XL" }
+      ]
+    },
+    "spacing": {
+      "units": [ "px", "rem", "%" ],
+      "spacingSizes": [
+        { "slug": "1", "size": "var(--spacing-1)", "name": "1" },
+        { "slug": "2", "size": "var(--spacing-2)", "name": "2" },
+        { "slug": "3", "size": "var(--spacing-3)", "name": "3" },
+        { "slug": "4", "size": "var(--spacing-4)", "name": "4" },
+        { "slug": "5", "size": "var(--spacing-5)", "name": "5" },
+        { "slug": "6", "size": "var(--spacing-6)", "name": "6" },
+        { "slug": "8", "size": "var(--spacing-8)", "name": "8" }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "text": "var(--color-text)",
+      "background": "var(--color-background)"
+    },
+    "typography": {
+      "fontFamily": "var(--font-sans)",
+      "fontSize": "var(--font-size-base)"
+    }
+  }
+}
