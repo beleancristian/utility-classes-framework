@@ -1,1 +1,279 @@
+/* ==========================================================================
+   FRAMEWORK CSS - HIERARCHY EDITION (Primary, Secondary, Tertiary, Accent)
+   ========================================================================== */
 
+/* --------------------------------------------------------------------------
+   1. MODERN RESET
+   -------------------------------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button, input, textarea, select {
+  font: inherit;
+}
+
+/* --------------------------------------------------------------------------
+   2. CONTROL PANEL (:root) - AICI DEFINESTI BRANDUL
+   -------------------------------------------------------------------------- */
+
+:root {
+  /* === A. HIERARCHY PALETTE (INPUT) === */
+  /* Defineste cele 4 culori structurale ale site-ului tau */
+  
+  /* 1. PRIMARY: Actiunea principala, Brandul dominant */
+  --hue-primary:   #3b82f6; /* Blue */
+
+  /* 2. SECONDARY: Elemente de suport, butoane secundare, sectiuni alternative */
+  /* De obicei o nuanta mai inchisa, desaturata sau complementara */
+  --hue-secondary: #475569; /* Slate/Gray Blue */
+
+  /* 3. TERTIARY: Detalii fine, elemente decorative, fundaluri speciale */
+  --hue-tertiary:  #0ea5e9; /* Sky Blue */
+
+  /* 4. ACCENT: "Pop" color, notificari, call-to-action special */
+  --hue-accent:    #f59e0b; /* Amber/Orange */
+
+
+  /* === B. SEMANTIC PALETTE (STATUS) === */
+  --hue-success:   #10b981;
+  --hue-warning:   #f59e0b;
+  --hue-error:     #ef4444;
+
+  /* === C. BASE NEUTRALS === */
+  --base-white: #ffffff;
+  --base-black: #0f172a;
+
+  /* === D. THEME LOGIC === */
+  --bg-canvas: var(--base-white);
+  --text-ink:  var(--base-black);
+}
+
+/* Dark Mode Logic */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-canvas: var(--base-black);
+    --text-ink:  var(--base-white);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. COLOR ENGINE (AUTOMATIC MIXING)
+   Genereaza variantele (Hover, Soft, Border) pentru toata ierarhia.
+   -------------------------------------------------------------------------- */
+:root {
+  /* --- LAYERS --- */
+  --bg-body: var(--bg-canvas);
+  --bg-surface: color-mix(in srgb, var(--text-ink), var(--bg-canvas) 96%); /* Fundal usor gri */
+  --bg-card: var(--bg-canvas);
+
+  /* --- TEXT LEVELS --- */
+  --text-main: var(--text-ink);
+  --text-muted: color-mix(in srgb, var(--text-ink), var(--bg-canvas) 40%);
+
+  /* --- 1. PRIMARY GENERATOR --- */
+  --col-primary: var(--hue-primary);
+  --primary-hover: color-mix(in srgb, var(--col-primary), black 10%);
+  --primary-soft:  color-mix(in srgb, var(--col-primary), var(--bg-canvas) 90%);
+  --primary-border: color-mix(in srgb, var(--col-primary), var(--bg-canvas) 60%);
+
+  /* --- 2. SECONDARY GENERATOR --- */
+  --col-secondary: var(--hue-secondary);
+  --secondary-hover: color-mix(in srgb, var(--col-secondary), black 10%);
+  --secondary-soft:  color-mix(in srgb, var(--col-secondary), var(--bg-canvas) 90%);
+  --secondary-border: color-mix(in srgb, var(--col-secondary), var(--bg-canvas) 60%);
+
+  /* --- 3. TERTIARY GENERATOR --- */
+  --col-tertiary: var(--hue-tertiary);
+  --tertiary-hover: color-mix(in srgb, var(--col-tertiary), black 10%);
+  --tertiary-soft:  color-mix(in srgb, var(--col-tertiary), var(--bg-canvas) 90%);
+  --tertiary-border: color-mix(in srgb, var(--col-tertiary), var(--bg-canvas) 60%);
+
+  /* --- 4. ACCENT GENERATOR --- */
+  --col-accent: var(--hue-accent);
+  --accent-hover: color-mix(in srgb, var(--col-accent), black 10%);
+  --accent-soft:  color-mix(in srgb, var(--col-accent), var(--bg-canvas) 90%);
+  --accent-border: color-mix(in srgb, var(--col-accent), var(--bg-canvas) 60%);
+
+  /* --- STATUS GENERATOR --- */
+  --col-success: var(--hue-success);
+  --success-soft: color-mix(in srgb, var(--col-success), var(--bg-canvas) 90%);
+  --success-text: color-mix(in srgb, var(--col-success), black 20%);
+  
+  --col-error: var(--hue-error);
+  --error-soft: color-mix(in srgb, var(--col-error), var(--bg-canvas) 90%);
+  --error-text: color-mix(in srgb, var(--col-error), black 10%);
+
+  /* --- BORDERS --- */
+  --border-base: color-mix(in srgb, var(--text-ink), transparent 85%);
+}
+
+/* --------------------------------------------------------------------------
+   4. TYPOGRAPHY & TYPE SCALE
+   -------------------------------------------------------------------------- */
+:root {
+  --font-sans: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  
+  --base-size: 1.6rem;
+  --ratio-mobile: 1.2;
+  --ratio-desktop: 1.333;
+  --fluid-slope: 1.5vw;
+
+  /* Math Blocks (Hidden logic) */
+  --m-base: var(--base-size);
+  --m-md: calc(var(--m-base)*var(--ratio-mobile)); --m-lg: calc(var(--m-md)*var(--ratio-mobile)); --m-xl: calc(var(--m-lg)*var(--ratio-mobile)); --m-2xl: calc(var(--m-xl)*var(--ratio-mobile)); --m-3xl: calc(var(--m-2xl)*var(--ratio-mobile));
+  --d-base: var(--base-size);
+  --d-md: calc(var(--d-base)*var(--ratio-desktop)); --d-lg: calc(var(--d-md)*var(--ratio-desktop)); --d-xl: calc(var(--d-lg)*var(--ratio-desktop)); --d-2xl: calc(var(--d-xl)*var(--ratio-desktop)); --d-3xl: calc(var(--d-2xl)*var(--ratio-desktop)); --d-4xl: calc(var(--d-3xl)*var(--ratio-desktop));
+
+  /* Clamps */
+  --text-base: var(--base-size);
+  --text-xs: 1.2rem; --text-sm: 1.4rem;
+  --text-h6: clamp(var(--m-base), calc(var(--m-base) + var(--fluid-slope)), var(--d-md));
+  --text-h5: clamp(var(--m-md), calc(var(--m-md) + var(--fluid-slope)), var(--d-lg));
+  --text-h4: clamp(var(--m-lg), calc(var(--m-lg) + var(--fluid-slope)), var(--d-xl));
+  --text-h3: clamp(var(--m-xl), calc(var(--m-xl) + var(--fluid-slope)), var(--d-2xl));
+  --text-h2: clamp(var(--m-2xl), calc(var(--m-2xl) + var(--fluid-slope)), var(--d-3xl));
+  --text-h1: clamp(var(--m-3xl), calc(var(--m-3xl) + var(--fluid-slope)), var(--d-4xl));
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 { font-weight: 700; line-height: 1.1; color: var(--text-main); margin-block-end: var(--space-4); }
+.h1 { font-size: var(--text-h1); letter-spacing: -0.02em; }
+.h2 { font-size: var(--text-h2); line-height: 1.2; }
+.h3 { font-size: var(--text-h3); }
+.h4 { font-size: var(--text-h4); }
+.h5 { font-size: var(--text-h5); }
+.h6 { font-size: var(--text-h6); text-transform: uppercase; letter-spacing: 0.05em; }
+
+.text-xs { font-size: var(--text-xs); }
+.text-sm { font-size: var(--text-sm); }
+.text-base { font-size: var(--text-base); }
+.text-lg { font-size: var(--text-h5); }
+.text-xl { font-size: var(--text-h4); }
+
+.font-bold { font-weight: 700; }
+.font-medium { font-weight: 500; }
+.italic { font-style: italic; }
+.text-center { text-align: center; }
+.uppercase { text-transform: uppercase; }
+
+/* --------------------------------------------------------------------------
+   5. COLOR UTILITIES (HIERARCHY)
+   -------------------------------------------------------------------------- */
+
+/* NEUTRALS */
+.bg-body { background-color: var(--bg-body); }
+.bg-surface { background-color: var(--bg-surface); }
+.bg-card { background-color: var(--bg-card); }
+.text-main { color: var(--text-main); }
+.text-muted { color: var(--text-muted); }
+
+/* --- PRIMARY (Brand) --- */
+.text-primary { color: var(--col-primary); }
+.bg-primary { background-color: var(--col-primary); color: white; }
+.bg-primary-soft { background-color: var(--primary-soft); color: var(--col-primary); }
+.border-primary { border: 1px solid var(--primary-border); }
+
+/* --- SECONDARY --- */
+.text-secondary { color: var(--col-secondary); }
+.bg-secondary { background-color: var(--col-secondary); color: white; }
+.bg-secondary-soft { background-color: var(--secondary-soft); color: var(--col-secondary); }
+.border-secondary { border: 1px solid var(--secondary-border); }
+
+/* --- TERTIARY --- */
+.text-tertiary { color: var(--col-tertiary); }
+.bg-tertiary { background-color: var(--col-tertiary); color: white; }
+.bg-tertiary-soft { background-color: var(--tertiary-soft); color: var(--col-tertiary); }
+.border-tertiary { border: 1px solid var(--tertiary-border); }
+
+/* --- ACCENT --- */
+.text-accent { color: var(--col-accent); }
+.bg-accent { background-color: var(--col-accent); color: white; }
+.bg-accent-soft { background-color: var(--accent-soft); color: var(--col-accent); }
+.border-accent { border: 1px solid var(--accent-border); }
+
+/* --- STATUS --- */
+.text-success { color: var(--col-success); }
+.bg-success { background-color: var(--col-success); color: white; }
+.bg-success-soft { background-color: var(--success-soft); color: var(--success-text); }
+
+.text-error { color: var(--col-error); }
+.bg-error { background-color: var(--col-error); color: white; }
+.bg-error-soft { background-color: var(--error-soft); color: var(--error-text); }
+
+/* BORDERS GENERAL */
+.border { border: 1px solid var(--border-base); }
+.rounded { border-radius: 0.4rem; }
+.rounded-lg { border-radius: 0.8rem; }
+.rounded-full { border-radius: 9999px; }
+
+/* --------------------------------------------------------------------------
+   6. SPACING & LAYOUT
+   -------------------------------------------------------------------------- */
+:root {
+  --unit: 0.4rem;
+  --space-1: calc(var(--unit)*1); --space-2: calc(var(--unit)*2); --space-3: calc(var(--unit)*3);
+  --space-4: calc(var(--unit)*4); --space-6: calc(var(--unit)*6); --space-8: calc(var(--unit)*8);
+  --space-12: calc(var(--unit)*12); --space-16: calc(var(--unit)*16);
+  --w-container: 128rem;
+}
+
+/* Padding/Margin */
+.p-0 { padding: 0; }
+.p-2 { padding: var(--space-2); } .p-4 { padding: var(--space-4); } .p-6 { padding: var(--space-6); } .p-8 { padding: var(--space-8); }
+.px-2 { padding-inline: var(--space-2); } .px-4 { padding-inline: var(--space-4); } .px-6 { padding-inline: var(--space-6); }
+.py-2 { padding-block: var(--space-2); } .py-4 { padding-block: var(--space-4); } .py-6 { padding-block: var(--space-6); } .py-8 { padding-block: var(--space-8); }
+.m-auto { margin: auto; } .mx-auto { margin-inline: auto; }
+.mt-2 { margin-block-start: var(--space-2); } .mt-4 { margin-block-start: var(--space-4); } .mt-8 { margin-block-start: var(--space-8); }
+.mb-2 { margin-block-end: var(--space-2); } .mb-4 { margin-block-end: var(--space-4); } .mb-8 { margin-block-end: var(--space-8); }
+.flow > * + * { margin-block-start: var(--space-4); }
+
+/* Layout */
+.container { width: 100%; max-width: var(--w-container); margin-inline: auto; padding-inline: var(--space-4); }
+.block { display: block; } .hidden { display: none; }
+.flex { display: flex; } .flex-col { flex-direction: column; } .flex-wrap { flex-wrap: wrap; }
+.items-center { align-items: center; } .justify-between { justify-content: space-between; } .justify-center { justify-content: center; } .justify-end { justify-content: flex-end; }
+.gap-2 { gap: var(--space-2); } .gap-4 { gap: var(--space-4); } .gap-8 { gap: var(--space-8); }
+
+.grid { display: grid; }
+.grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+.grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+.w-full { width: 100%; } .h-screen { height: 100vh; }
+.shadow { box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1); }
+
+/* Responsive */
+@media (min-width: 768px) {
+  .md-flex-row { flex-direction: row; }
+  .md-grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .md-w-auto { width: auto; }
+  .md-block { display: block; }
+}
+@media (min-width: 1024px) {
+  .lg-grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
